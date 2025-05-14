@@ -1,26 +1,33 @@
-# Algmali-ADB-Link
+# Algmali ADB Link Method
 
-**Algmali ADB Link** هي طريقة مبتكرة تم تطويرها من قبل الجمالي لتمكين تنفيذ أوامر ADB بين جهازين أندرويد باستخدام كابل USB-C وتطبيق ADB على الجهاز الثاني. دون الحاجة إلى كمبيوتر أو روت.
+**Algmali ADB Link** is a powerful method that allows running ADB (Android Debug Bridge) commands from one Android device to another **without root and without using a PC**.  
+Discovered by Algmali, this technique unlocks new possibilities for developers, technicians, and advanced Android users.
 
-## المتطلبات:
-- تفعيل USB Debugging على كلا الهاتفين.
-- كابل USB-C بين الجهازين.
-- تطبيق ADB على الهاتف الثاني.
-- تفعيل خيارات المطور في الهاتفين.
+---
 
-## الخطوات:
-1. تفعيل **USB Debugging** على كلا الجهازين من خيارات المطور.
-2. توصيل الجهازين باستخدام كابل USB-C.
-3. السماح بالاتصال بـ ADB بين الجهازين.
-4. استخدام تطبيق ADB على الهاتف الثاني لتنفيذ الأوامر.
+## 🌟 Features:
+- Run ADB commands without a computer
+- Launch apps that can't be opened normally
+- Bypass PC requirements for debugging and automation
+- No root needed
 
-## الأمثلة:
-- تشغيل التطبيقات.
-- إعادة تشغيل الجهاز إلى وضع الريكفري أو البوتلودر.
-- تنفيذ أوامر ADB متعددة.
+---
 
-## التحديات والحلول:
-- قد تواجه بعض المستخدمين مشاكل في التوصيل بين الجهازين. تأكد من السماح بكل الأذونات المطلوبة على كلا الجهازين.
+## 🛠 Requirements:
+- Two Android phones
+- Type-C to Type-C cable
+- An ADB Shell app (like LADB, ADB Client, etc.)
+- USB debugging enabled on the target phone
 
-## ملاحظات:
-هذه الطريقة توفر إمكانية تشغيل أوامر ADB دون الحاجة إلى جهاز كمبيوتر، مما يسهل العمليات على المطورين والمستخدمين العاديين.
+---
+
+## 🚀 How It Works:
+1. Connect the two phones using a Type-C to Type-C cable.
+2. On the target phone, enable **USB Debugging** from Developer Options.
+3. On the second phone, open the ADB app and wait for the authorization prompt.
+4. Accept the USB Debugging request on the target phone.
+5. Now run any ADB command you want!
+
+Example:
+```bash
+adb shell monkey -p com.example.app 1
